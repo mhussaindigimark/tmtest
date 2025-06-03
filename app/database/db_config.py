@@ -8,9 +8,11 @@ from sqlalchemy.orm import sessionmaker
 
 # Load environment variables
 load_dotenv()
+DATABASE_URL = "postgresql://neondb_owner:npg_oLXs0I1QCcGy@ep-long-snowflake-a4y58hyg-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require"
 
 # PostgreSQL database URI (example: "postgresql://username:password@localhost/db_name")
-DATABASE_URL = os.getenv("DATABASE_URL")
+
+
 # Create database engine
 engine = create_engine(DATABASE_URL)
 
